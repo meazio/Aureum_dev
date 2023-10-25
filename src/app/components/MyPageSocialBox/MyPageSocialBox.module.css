@@ -1,0 +1,39 @@
+.social-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: 38px;
+  padding-bottom: 38px;
+}
+
+.mypage-type-box {
+  color: #252628;
+  font-weight: 500;
+  letter-spacing: -0.333px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.social-img {
+  margin-right: 7px;
+}
+
+.mypage-content-box {
+  display: flex;
+  align-items: center;
+}
+
+.peristalsis {
+  cursor: pointer;
+  display: inline-flex;
+  height: 28px;
+  padding: 0px 19px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 59px;
+  border: 1px solid var(--active-green, #41a24b);
+  background: #fff;
+  color: #41a24b;
+}

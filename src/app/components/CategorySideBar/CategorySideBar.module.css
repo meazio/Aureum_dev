@@ -1,0 +1,133 @@
+.desktop-container {
+  position: absolute;
+  left: 80px;
+  max-width: 1200px;
+  margin: 30px auto 450px;
+}
+
+.container {
+  left: 40px;
+  max-width: 1200px;
+  margin: 30px auto 450px;
+}
+
+.learning-box {
+  display: flex;
+}
+
+.learning-data {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-left: 10.74px;
+}
+
+.learning-materials {
+  color: #a7a7a7;
+  font-size: 18px;
+  font-weight: 350;
+  letter-spacing: -0.27px;
+  margin-bottom: 73px;
+}
+
+.category-box {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.category-box img {
+  margin-right: 10px;
+}
+
+.category {
+  color: #333;
+  font-weight: 500;
+}
+
+.all {
+  display: flex;
+  padding: 14px 150px 14px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d1d1d1;
+  border-top: 1px solid #000;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 43px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #000;
+}
+
+.filter-box-left {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter-box-left img {
+  margin-right: 10px;
+}
+
+.filter-box-right {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  padding: 5px 9px;
+  color: #888888;
+  cursor: pointer;
+}
+
+.filter-box-right img {
+  margin-right: 10px;
+}
+
+.filter-box-title {
+  color: #333;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  padding: 21px 0 22px;
+}
+
+.filter-box-title span {
+  color: #41a24b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 4px;
+}
+
+.detail-filter-box {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #f4f4f4;
+  color: #333;
+  font-size: 14px;
+  font-weight: 350;
+}
+
+.filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex: 1 0 0;
+  width: 100%;
+  height: 38px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 26px;
+  background: var(--active_green, #41a24b);
+}

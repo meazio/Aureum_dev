@@ -1,0 +1,7 @@
+.consulting-card {
+  cursor: pointer;
+}
+
+.filtered-card {
+  display: none;
+}

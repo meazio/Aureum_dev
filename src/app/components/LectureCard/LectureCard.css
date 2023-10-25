@@ -1,0 +1,211 @@
+.card {
+  border: 0;
+  background-color: white;
+  box-shadow: none;
+  width: 249px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.mobile-card {
+  margin: 30px 40px;
+}
+
+.preview-link {
+  cursor: pointer;
+}
+
+.card-body {
+  width: 249px;
+  margin: 20px 0 14px;
+  padding: 0;
+}
+
+.rate-box {
+  display: flex;
+}
+
+.card-img-top {
+  height: 140px;
+  border-radius: 6px;
+  background: lightgray 50%;
+  box-shadow: 0px 0px 8px 0px rgba(139, 139, 139, 0.4);
+}
+
+.rate-img {
+  position: relative;
+  top: 3px;
+  width: 17.6px;
+  height: 16.51px;
+}
+
+.rate-text {
+  color: #41a24b;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+}
+
+.rate-count {
+  position: relative;
+  left: 4px;
+  bottom: 1.2px;
+  color: #8c8c8c;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.333px;
+}
+
+.middle-line {
+  height: 13px;
+  position: relative;
+  left: 12px;
+  top: 5px;
+  align-items: center;
+}
+
+.author-name {
+  position: relative;
+  top: 1px;
+  margin-left: 22px;
+  color: #494949;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.333px;
+}
+
+.card-category {
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+  width: 249px;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  display: flex;
+  padding: 0px 5px;
+  gap: 10px;
+  border-radius: 2px;
+  background: #c89c46;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.333px;
+  margin-right: 7px;
+}
+
+.field {
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 22.5px; /* 187.5% */
+  letter-spacing: -1.333px;
+}
+
+.card-title {
+  color: #303030;
+  font-weight: 500;
+  line-height: 19px; /* 118.75% */
+  letter-spacing: -1.333px;
+  margin-top: 8px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card-text {
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: left;
+  color: #b0b0b0;
+  width: 249px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100px; */
+}
+
+.lecture-tag {
+  display: flex;
+  color: #848484;
+  height: 24px;
+  padding: 14px 10px 14px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  margin-right: 5px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.more-tag-container {
+  width: 60px;
+}
+
+.more-tag-btn {
+  color: #aeaeae;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  padding: 0 10px;
+  right: 20px;
+  width: 40px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+@media (max-width: 768px) {
+  .lecture-page-card {
+    width: 70vw;
+  }
+
+  .lecture-page-card .card-img-top {
+    height: 300px;
+  }
+}
+
+@media (min-width: 540px) {
+  .mobile-card {
+    margin: 30px 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-card {
+    position: relative;
+    right: 20px;
+    width: 100vw;
+    margin: 20px 30px;
+    padding: 0 20px;
+  }
+}

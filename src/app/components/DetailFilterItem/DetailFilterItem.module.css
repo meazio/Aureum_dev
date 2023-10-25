@@ -1,0 +1,9 @@
+.field {
+  display: flex;
+  align-items: center;
+}
+
+.field img {
+  margin-right: 4px;
+  cursor: pointer;
+}

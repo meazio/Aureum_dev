@@ -1,0 +1,15 @@
+.trainer-box {
+  margin: 0;
+  position: relative;
+  bottom: 230px;
+}
+
+.row-box {
+  height: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  margin-bottom: 30px;
+}

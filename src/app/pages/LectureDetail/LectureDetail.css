@@ -1,0 +1,222 @@
+@import url('/src/app//styles/reset.css');
+
+.lecture-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80vw;
+}
+
+.banner {
+  background-color: #41a24b;
+  padding: 50px;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.author-profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+
+.author-box {
+  margin-left: 10px;
+}
+
+.author,
+.date {
+  color: white;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.desc {
+  width: 80vw;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.edu_box {
+  margin-top: 80px;
+  padding: 0 60px;
+  margin-bottom: 300px;
+}
+
+.edu_wrap {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.quick_box {
+  margin-bottom: 2.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tittle > .text_box {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn_r--sd,
+.like-btn {
+  width: 220px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  margin-left: 24px;
+  background-color: #ffffff;
+  color: #797979;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.text_icon > span {
+  margin-right: 6px;
+}
+
+.mono_icon {
+  width: 60px;
+}
+
+.btn_r--sd:hover {
+  color: #6aa121;
+}
+
+.q_active {
+  color: #6aa121;
+}
+
+.tittle > .img_area {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+}
+
+.tit_top {
+  display: flex;
+  align-items: center;
+}
+
+.made_name {
+  display: flex;
+}
+
+.tit_top > .made_name::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #797979;
+  width: 10px;
+  height: 18px;
+  margin: 0 8px 0 20px;
+}
+
+.user_visitor {
+  color: #797979;
+}
+
+.tit_middle {
+  margin: 1.2rem 0;
+}
+
+.tit_middle > h1 {
+  font-size: 2rem;
+  word-break: keep-all;
+  font-weight: 800;
+  word-spacing: -0.2rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.tit_middle > p {
+  word-break: keep-all;
+  color: #808080;
+  line-height: 1.4rem;
+}
+
+.tit_bottom > ul {
+  display: flex;
+  align-items: center;
+}
+
+.edu_tag--r {
+  color: #ffffff;
+  background-color: #242424;
+  padding: 0.6rem 0.8rem;
+  border-radius: 999px;
+  margin-right: 16px;
+  word-break: keep-all;
+}
+
+.contents > img {
+  border-radius: 24px;
+}
+
+.contents > * {
+  width: 100%;
+}
+
+.lecture-title {
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: 'KoddiUDOnGothic-Regular';
+  border-collapse: collapse;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-width: 1000px) {
+  .lecture-title {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .tittle {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .tit_middle .lecture-title {
+    font-size: 0.1rem;
+    width: 70vw;
+  }
+  .tittle > .text_box {
+    padding: 40px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 25px;
+    width: 50vw;
+  }
+}

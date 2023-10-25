@@ -1,0 +1,10 @@
+.category-tag {
+  display: flex;
+  width: fit-content;
+  padding: 10px 13.41px 10px 13px;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  background: #fff;
+  margin: 0 8px;
+}

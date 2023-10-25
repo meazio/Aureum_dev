@@ -1,0 +1,131 @@
+.hot-trend-box {
+  display: flex;
+  padding: 23px 21px 29px 21px;
+  margin: 15px auto;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+  background: #f6f6f6;
+  width: 68vw;
+  max-width: 1100px;
+}
+
+.hot-trend {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hot-trend-body {
+  display: flex;
+  padding-top: 13px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-top: 1px solid #c8c8c8;
+}
+
+.hot-trend-desc {
+  font-size: 13px;
+}
+
+.highlight {
+  color: #2a7fe7;
+  font-weight: 350;
+}
+
+.hot-tag-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-filter-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+}
+
+.search-highlight {
+  color: #41a24b;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter-select {
+  position: absolute;
+  right: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-select option {
+  cursor: pointer;
+}
+
+.newest {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.by-popularity {
+  cursor: pointer;
+}
+
+.by-view {
+  cursor: pointer;
+}
+
+@media (max-width: 1800px) {
+  .lecture-home-page {
+    width: 70vw;
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .lecture-card-deck {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lecture-home-page {
+    width: auto;
+    margin: 0 30px;
+  }
+  .hot-trend-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .lecture-card-deck {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .lecture-card-deck {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .lecture-card-deck {
+    width: auto;
+  }
+}

@@ -1,0 +1,135 @@
+.menubar-container {
+  max-width: 1100px;
+  width: 100vw;
+  margin: 69px auto 0;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.all {
+  color: #929292;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.divider {
+  color: #b5b5b5;
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0 12px;
+}
+
+.category {
+  color: #343a40;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.top-menu-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step,
+.interests {
+  color: #929292;
+  font-family: Roboto;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.step-select,
+.interests-select {
+  display: flex;
+  width: 30%;
+  padding: 8px 14px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  outline: 0;
+  border-radius: 4px;
+  border: 1px solid #c5c5c5;
+}
+
+.search {
+  width: 134px;
+  height: 45px;
+  top: 336px;
+  left: 1128px;
+  padding: 10px;
+  border-radius: 2px;
+  gap: 10px;
+  background-color: #41a24b;
+  border: 0;
+  color: white;
+}
+
+.search-wrapper {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid var(--active_green, #41a24b);
+  height: 50px;
+  max-width: 1100px;
+}
+
+.search-input {
+  display: flex;
+  width: 100vw;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  max-width: 1200px;
+  margin: 15px 0;
+  border-radius: 6px;
+  padding: 12px 41px 12px 18px;
+  align-items: center;
+  gap: 205px;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .menubar-container {
+    width: 68vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menubar-container {
+    width: 100%;
+    margin: 0;
+  }
+  .search-input {
+    width: 1%;
+    padding: 0;
+    padding-left: 18px;
+  }
+  .search-wrapper {
+    width: auto;
+  }
+}

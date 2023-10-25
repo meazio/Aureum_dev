@@ -1,0 +1,35 @@
+.category {
+  display: flex;
+  padding: 14px 15px 14px 0px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle-icon {
+  margin-right: 10px;
+}
+
+.all-category,
+.sub-category {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d1d1d1;
+  cursor: pointer;
+  padding: 14px 9px;
+  background-color: #f4f4f4;
+}
+
+.category:last-child {
+  border-bottom: 0;
+}
+
+.selected {
+  color: white;
+  background: var(--active_green, #41a24b);
+}

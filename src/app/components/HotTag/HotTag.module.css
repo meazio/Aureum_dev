@@ -1,0 +1,18 @@
+.hot-tag {
+  display: flex;
+  max-width: 250px;
+  padding: 1px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 50px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  color: #41a24b;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 31px;
+  margin-bottom: 9px;
+  margin-right: 4px;
+  cursor: pointer;
+}
