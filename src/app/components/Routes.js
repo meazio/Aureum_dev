@@ -5,7 +5,6 @@ import Register from 'app/pages/Register/Register';
 import Home from 'app/pages/Home/Home';
 import Settings from 'app/pages/Settings/Settings';
 import LectureDetail from 'app/pages/LectureDetail/LectureDetail';
-import ConsultingPage from 'app/pages/ConsultingPage/ConsultingPage';
 import ConsultingDetail from 'app/pages/ConsultingDetail/ConsultingDetail';
 import MentorPage from 'app/pages/MentorPage/MentorPage';
 import MentorDetail from 'app/pages/MentorDetail/MentorDetail';
