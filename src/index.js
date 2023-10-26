@@ -2,21 +2,31 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from 'app/store';
-import App from 'App';
-import 'index.css';
+import toolArea from './app/';
+import viewBox from './app/pages/viewArea';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-const persistor = persistStore(store);
+// 컨테이너를 기반으로 createRoot 호출
+function createRootWithContainer(container) {
+  return createRoot(container);
+}
 
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <App />
-      </PersistGate>
-    </Provider>
-  </React.StrictMode>,
-);
+// 앱을 렌더링하는 함수
+function renderApp(container) {
+  const persistor = persistStore(store);
+
+  createRootWithContainer(container).render(
+    <React.StrictMode>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          {container.id === 'toolArea' ? <toolArea /> : <viewBox />}
+        </PersistGate>
+      </Provider>
+    </React.StrictMode>
+  );
+}
+
+// 함수 호출
+renderApp(document.getElementById('toolArea'));
+renderApp(document.getElementById('viewArea'));
