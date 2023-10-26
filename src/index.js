@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from 'app/store';
-import toolArea from './app/';
-import viewBox from './app/pages/viewArea';
+import toolArea from '../src/app/pages/toolTap/toolTap';
+import viewArea from './app/pages/viewArea/view';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 
@@ -20,7 +20,7 @@ function renderApp(container) {
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          {container.id === 'toolArea' ? <toolArea /> : <viewBox />}
+          {container.id === 'toolArea' ? <toolArea /> : <viewArea />}
         </PersistGate>
       </Provider>
     </React.StrictMode>
