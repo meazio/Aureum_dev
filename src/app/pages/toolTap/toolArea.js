@@ -5,14 +5,17 @@ import Navbar from 'app/components/Navbar/Navbar';
 import Routes from 'app/components/Routes';
 import Footer from 'app/components/Footer/Footer.tsx';
 
-const toolArea = () => {
+
+function toolArea() {
   return (
-    <Router>
-      <Navbar />
-      <Routes />
-      <Footer />
-    </Router>
+    <div>
+      <Router>
+        <Navbar />
+        <Routes />
+        <Footer />
+      </Router>
+    </div>
   );
-};
+}
 
 export default toolArea;

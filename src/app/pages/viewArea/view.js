@@ -7,11 +7,13 @@ import Footer from 'app/components/Footer/Footer.tsx';
 
 const viewArea = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes />
-      <Footer />
-    </Router>
+    <div>
+        <Router>
+        <Navbar />
+        <Routes />
+        <Footer />
+        </Router>
+    </div>
   );
 };
 

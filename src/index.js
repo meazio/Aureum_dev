@@ -2,10 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from 'app/store';
-import toolArea from '../src/app/pages/toolTap/toolTap';
-import viewArea from './app/pages/viewArea/view';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
+
+import toolArea from './app/pages/toolTap/toolArea';  
+import viewArea from './app/pages/viewArea/view';
+
 
 // 컨테이너를 기반으로 createRoot 호출
 function createRootWithContainer(container) {
@@ -20,7 +22,7 @@ function renderApp(container) {
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          {container.id === 'toolArea' ? <toolArea /> : <viewArea />}
+          {container.id === 'tool_area' ? <toolArea /> : <viewArea />}
         </PersistGate>
       </Provider>
     </React.StrictMode>
@@ -28,5 +30,5 @@ function renderApp(container) {
 }
 
 // 함수 호출
-renderApp(document.getElementById('toolArea'));
-renderApp(document.getElementById('viewArea'));
+renderApp(document.getElementById('tool_area'));
+renderApp(document.getElementById('view_area'));

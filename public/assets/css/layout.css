@@ -1,0 +1,22 @@
+.layout {
+    border: 1px solid red;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+#tool_area,
+#view_area {
+    overflow: scroll;
+}
+
+#tool_area {
+    border: 1px solid green;
+    width: 22%;
+}
+
+#view_area {
+    border: 1px solid blue;
+    width: 78%;
+}
