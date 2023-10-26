@@ -5,8 +5,8 @@ import { store } from 'app/store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 
-import toolArea from './app/pages/toolTap/toolArea';  
-import viewArea from './app/pages/viewArea/view';
+import ToolArea from 'app/pages/ToolTap/ToolArea';  
+import ViewArea from 'app/pages/ViewArea/View';
 
 
 // 컨테이너를 기반으로 createRoot 호출
@@ -22,7 +22,7 @@ function renderApp(container) {
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          {container.id === 'tool_area' ? <toolArea /> : <viewArea />}
+          {container.id === 'tool_area' ? <ToolArea /> : <ViewArea />}
         </PersistGate>
       </Provider>
     </React.StrictMode>

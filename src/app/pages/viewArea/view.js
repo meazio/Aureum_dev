@@ -5,7 +5,7 @@ import Navbar from 'app/components/Navbar/Navbar';
 import Routes from 'app/components/Routes';
 import Footer from 'app/components/Footer/Footer.tsx';
 
-const viewArea = () => {
+const ViewArea = () => {
   return (
     <div>
         <Router>
@@ -17,4 +17,4 @@ const viewArea = () => {
   );
 };
 
-export default viewArea;
+export default ViewArea;
