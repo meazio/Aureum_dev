@@ -1,22 +1,37 @@
 .layout {
-    border: 1px solid red;
     display: flex;
     height: 100vh;
     width: 100vw;
     position: fixed;
 }
 
-#tool_area,
-#view_area {
-    overflow: scroll;
+
+.tool {
+    border-right: 1px solid #dfdfdf;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#tool_area {
-    border: 1px solid green;
-    width: 22%;
+.tool button {
+    border-radius: 999px;
+    background-color: #fff;
+    border: none;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
 }
 
+
+.tool > .tool-box {
+    padding: 20px 10px;
+}
+
+
+
 #view_area {
-    border: 1px solid blue;
-    width: 78%;
+    overflow-y: scroll;
+    width: 100%;
 }

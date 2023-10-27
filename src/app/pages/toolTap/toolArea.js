@@ -1,14 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Tool from 'app/pages/ToolTap/Components/Tool'
 
 
-
-function toolArea() {
+function ToolArea() {
   return (
-    <div>
-ddd
-    </div>
+    <Tool />
   );
 }
 
-export default toolArea;
+export default ToolArea;
